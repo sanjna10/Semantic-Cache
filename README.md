@@ -31,6 +31,8 @@ Instead of relying on exact string matching, the system uses embedding-based sim
 
 The system acts as an intelligent middleware layer between applications and LLM providers.
 
+Still an in progress work - working on future improvements
+
 ---
 
 # ⚡ Features
@@ -191,13 +193,6 @@ Otherwise, the request is forwarded to the LLM.
 ```text
 Query → Embedding → Vector Search → Similar Match → Cached Response
 ```
-
-Benefits:
-- Reduced latency
-- Lower API cost
-- Faster user experience
-- Reduced GPU utilization
-
 ---
 
 ## ❌ Cache Miss
@@ -219,8 +214,6 @@ Future semantically similar queries can reuse the response.
 # 🧩 Core Components
 
 ## 1. Embedding Layer
-
-Responsible for converting user queries into dense vector embeddings.
 
 Supported models include:
 - HuggingFace Sentence Transformers
@@ -342,60 +335,20 @@ store(query, embedding, response)
 
 ---
 
-# 🌍 Production Use Cases
-
-- AI Chatbots
-- Retrieval-Augmented Generation (RAG)
-- Enterprise Search Systems
-- AI Copilots
-- Customer Support Assistants
-- Multimodal AI Applications
-- LLM Gateway Optimization
-- AI Infrastructure Middleware
-
 ---
 
 # 🔮 Future Improvements
 
 - Adaptive similarity thresholds
-- Redis integration
 - Distributed vector search
 - Streaming cache responses
-- GPU-accelerated embedding inference
 - Multi-level cache hierarchy
-- Real-time analytics dashboards
 - Cache invalidation policies
 
 ---
 
-# 🐳 Deployment
-
-## Docker
-
-```bash
-docker-compose up --build
-```
+---
 
 ---
 
-# 📖 References
-
-- FAISS
-- HuggingFace Sentence Transformers
-- FastAPI
-- Vector Similarity Search
-- Semantic Retrieval Systems
-
 ---
-
-# 📌 Resume Description
-
-Built an embedding-based semantic caching layer for LLM applications using vector similarity search to reduce redundant API calls, optimize inference latency, and improve response efficiency.
-
----
-
-# ⭐ Conclusion
-
-ModelCache demonstrates how embeddings, vector databases, and semantic similarity retrieval can be integrated into production-grade LLM systems to optimize performance and reduce operational costs.
-
-By combining semantic retrieval, cache routing, and intelligent write-back pipelines, the system enables scalable and efficient AI inference workflows.

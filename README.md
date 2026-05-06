@@ -98,21 +98,6 @@ This allows semantically equivalent queries to reuse existing LLM outputs.
 
 ---
 
-# ⚙️ Tech Stack
-
-| Component | Technology |
-|---|---|
-| Language | Python |
-| Embeddings | HuggingFace, BGE, ONNX |
-| Vector Search | FAISS / VectorDB |
-| API Layer | FastAPI |
-| Storage | Relational Database |
-| Similarity Search | Cosine Similarity |
-| Deployment | Docker |
-| Concurrency | Multiprocessing |
-
----
-
 # 📂 Project Structure
 
 ```bash
@@ -323,32 +308,12 @@ store(query, embedding, response)
 
 ---
 
-# 📊 Benefits
-
-- 🚀 Reduced response latency
-- 💰 Lower LLM API costs
-- 📉 Reduced redundant inference calls
-- ⚡ Faster user experience
-- 📈 Higher throughput under heavy traffic
-- 🧠 Efficient semantic query reuse
-- 🔄 Optimized LLM serving pipelines
-
----
-
----
 
 # 🔮 Future Improvements
 
 - Adaptive similarity thresholds
 - Distributed vector search
-- Streaming cache responses
 - Multi-level cache hierarchy
 - Cache invalidation policies
 
----
 
----
-
----
-
----

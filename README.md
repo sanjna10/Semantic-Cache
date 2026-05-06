@@ -31,7 +31,7 @@ Instead of relying on exact string matching, the system uses embedding-based sim
 
 The system acts as an intelligent middleware layer between applications and LLM providers.
 
-Still an in progress work - working on future improvements
+Still an in progress work - working on future improvements , docker deployment and fastAPI architecture.
 
 ---
 
@@ -41,11 +41,9 @@ Still an in progress work - working on future improvements
 - Embedding-driven query retrieval
 - Vector similarity search using FAISS / VectorDB
 - Cache hit / miss routing pipeline
-- FastAPI-ready production architecture
 - Configurable similarity thresholds
 - Query embedding write-back mechanism
 - Multiprocessing embedding dispatcher
-- Docker deployment support
 - Optimized LLM inference workflows
 
 ---
